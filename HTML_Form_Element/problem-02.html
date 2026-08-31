@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><title>Appointment Booking Form</title></head>
+<body>
+<h1><b><center><u>Clinic Appointment Booking</u></center></b></h1>
+<p>Please fill out the form below to request an appointment with one of our specialists.
+Our team will contact you to confirm your booking.</p><br>
+<form method="POST">
+<fieldset>
+    <legend><h2>Personal Information</h2></legend>
+    <label for="name">NAME :</label>
+    <input type="text" id="name" name="name" placeholder="Enter Your Name" required><br><br>
+    <lable for="dob">Date Of Birth :</lable>
+    <input type="date" id="dob" name="dob" required><br><br>
+    <label for="email">EMAIL :</label>
+    <input type="email" id="email" name="email" placeholder="xyz@domain.com" required><br><br>
+    <label for="mobile">Phone No. :</label>
+    <input type="tel" id="mobile" name="mobile" pattern="[0,9]{10}" placeholder="Enter phone no."reqiured>
+</fieldset>
+</form>
+<fieldset>
+<legend><h2><b>Doctor selection</b></h2></legend>
+<form method="POST">
+   <label for="category">Choose A Doctor & Department</label>
+   <select id="category" name="category" required>
+    <option value="select">Select</option>
+    <option value="Dr Ram">Dr Ram Agrawal - Cardiologist</option>
+    <option value="Dr Mohini">Dr Mohini Mishra - Pediatrics</option>
+    <option value="Dr Bhuvan">Dr Bhuvan Goyal - General Physician</option>
+    <option value="Dr Garima">Dr Garima Goyal - Dermatologist</option>
+    <option value="Dr Manya">Dr Manya Agrawal - Orthopedics</option>
+</select>
+</form></fieldset>
+<form method="POST">
+<fieldset>
+    <legend><h2>Appointment Date & Time</h2></legend>
+    <label for="appointment">Date :</label>
+    <input type="date" id="appointment" name="appointment" required><br><br>
+    <label for="time">Time Suitable :</label>
+    <input type="time" id="time" name="time">
+</fieldset></form>
+<form method="post">
+    <fieldset>
+        <legend><h2><b>Visit Type</b></h2></legend>
+        <label>Visit Type :</label>
+        <input type="radio" id="New Patient" name="New Patient" value="New Patient" required>
+        <label for="New Patient">New Patient</label>
+        <input type="radio" id="Follow-up" name="Follow-up" value="Follow-up">
+        <label for="Follow-up">Follow-up</label>
+        <input type="radio" id="Consultatant" name="Consultatant" value="Consultant">
+        <label for="Consultatant">Consultatant</label>
+        <input type="radio" id="Emergency" name="Emergency" value="Emergency">
+        <label for="Emergency">Emergency</label>
+    </fieldset></form>
+    <label for="pref_comm"><h2>Preferred Communication Method:</h2></label>
+        <select id="pref_comm" name="pref_comm" required>
+          <option value="select">Select</option>
+          <option value="email">Email</option>
+          <option value="phone">Phone Call</option>
+          <option value="sms">SMS</option>
+          <option value="offline">Offline</option>
+        </select><br><br>
+<label for="reason">Reason for Visit:</label><br>
+        <textarea id="reason" name="reason" rows="4" cols="50" maxlength="500"
+         placeholder="Describe symptoms or reasons for booking..."></textarea><br><br>
+<a href="https://www.maxhealthcare.in/terms-and-conditions" target="_blank">Terms & Condition</a><br>
+<input type="checkbox" id="terms" name="terms" required>
+<label for="terms">I accept the appointment terms and conditions.</label><br><br>
+<label for="patient_id">Patient ID (Optional):</label><br>
+<input type="text" id="patient_id" name="patient_id" maxlength="10" placeholder="e.g., P-10293">
+<br><br>
+<input type="submit" value="Submit Request">
+<input type="reset" value="Reset Form">
+</body>
+</html>
