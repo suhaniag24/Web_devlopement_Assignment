@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        #main{
+            display:grid;
+            grid-template-columns: repeat(2,1);
+            grid-template-rows: repeat(2,1fr);
+            height:150px;
+            width:450px;
+            gap:10px;
+            grid-template-areas: 
+            "a a"
+            "b c"
+            ;
+        }
+        .b1{
+            grid-area: a;
+            background-color: yellow;
+            height:40px;
+            padding:10px;
+        }
+        .b2{
+            grid-area: b;
+            background-color: red;
+            height:200px;
+            padding:10px;
+        }
+        .b3{
+            grid-area: c;
+            background-color: green;
+            height:200px;
+            padding:10px;
+        }
+        @media all and (max-width:667px){
+            #main{
+                grid-template-columns: 100%;
+                grid-template-rows: repeat(3,1fr);
+                grid-template-areas:
+                "a"
+                "b"
+                "c";
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div class="b1">Navigation</div>
+        <div class="b2">Left box</div>
+        <div class="b3">Right box</div>
+    </div>
+    
+</body>
+</html>

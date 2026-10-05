@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            problem
+        </title>
+        <style>
+            #main{
+                display: grid;
+                grid-template-columns: repeat(4,1fr);
+                grid-template-rows:repeat(3,1fr) ;
+                height: 200px;
+                width: 400px;
+                gap:10px;
+                grid-template-areas: 
+                "a a b b"
+                "c d d d"
+                "e e e e";
+                margin: 200px 400px;
+            }
+            .key{
+                grid-area:a;
+                background-color: gray;
+                 border-radius:10px;
+                border: 1px solid grey;
+                 padding: 20px;
+            }
+            .key1{
+                grid-area: b;
+                background-color: gray;
+                 border-radius:10px;
+                border: 1px solid grey;
+                 padding: 20px;
+            }
+            .key2{
+                grid-area: c;
+                background-color: gray;
+                 border-radius:10px;
+                border: 1px solid grey;
+                 padding: 20px;
+            }
+            .key3{
+                grid-area: d;
+                background-color: gray;
+                 border-radius:10px;
+                border: 1px solid grey;
+                 padding: 20px;
+            }
+            .key4{
+                grid-area: e;
+                background-color: gray;
+                 border-radius:10px;
+                border: 1px solid grey;
+                 padding: 20px;
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <div id="main">
+        <div class="key">A</div>
+        <div class="key1">B</div>
+        <div class="key2">C</div>
+        <div class="key3">D</div>
+        <div class="key4">E</div>
+        </div>
+    </body>
+</html>

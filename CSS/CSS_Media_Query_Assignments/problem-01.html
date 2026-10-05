@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Coffee Menu</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #faf8f5;
+    padding: 80px;
+}
+
+.container {
+    max-width: 1250px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 165px);
+    grid-template-areas:
+        "one two three"
+        "four five six"
+        "seven eight nine";
+    gap: 35px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 12px;
+    padding: 32px;
+    position: relative;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+}
+
+.card h2 {
+    font-size: 21px;
+    color: #222;
+}
+
+.card span {
+    position: absolute;
+    right: 32px;
+    top: 32px;
+    color: #b88925;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.card p {
+    margin-top: 25px;
+    color: #999;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.card1 {
+    grid-area: one;
+}
+
+.card2 {
+    grid-area: two;
+}
+
+.card3 {
+    grid-area: three;
+}
+
+.card4 {
+    grid-area: four;
+}
+
+.card5 {
+    grid-area: five;
+}
+
+.card6 {
+    grid-area: six;
+}
+
+.card7 {
+    grid-area: seven;
+}
+
+.card8 {
+    grid-area: eight;
+}
+
+.card9 {
+    grid-area: nine;
+}
+@media all and (max-width: 1023px) and (min-width:768px){
+    .container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+         grid-template-areas:
+                    "one two"
+                    "three four"
+                    "five six"
+                    "seven eight"
+                    "nine nine";
+    }
+}
+@media all and (max-width: 767px){
+    .container{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(9,1fr);
+        grid-template-areas: 
+        "one"
+        "two"
+        "three"
+        "four"
+        "five"
+        "six"
+        "seven"
+        "eight"
+        "nine";
+    }
+}
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="card card1">
+            <h2>Cappuccino</h2>
+            <span>$49</span>
+            <p>Usage of the Internet is becoming more common due to rapid advance.</p>
+        </div>
+
+        <div class="card card2">
+            <h2>Americano</h2>
+            <span>$49</span>
+            <p>Usage of the Internet is becoming more common due to rapid advance.</p>
+        </div>
+
+        <div class="card card3">
+            <h2>Espresso</h2>
+            <span>$49</span>
+            <p>Usage of the Internet is becoming more common due to rapid advance.</p>
+        </div>
+
+        <div class="card card4">
+            <h2>Macchiato</h2>
+            <span>$49</span>
+            <p>Usage of the Internet is becoming more common due to rapid advance.</p>
+        </div>
+
+        <div class="card card5">
+            <h2>Mocha</h2>
+            <span>$49</span>
+            <p>Usage of the Internet is becoming more common due to rapid advance.</p>
+        </div>
+
+        <div class="card card6">
+            <h2>Coffee Latte</h2>
+            <span>$49</span>
+            <p>Usage of the Internet is becoming more common due to rapid advance.</p>
+        </div>
+
+        <div class="card card7">
+            <h2>Piccolo Latte</h2>
+            <span>$49</span>
+            <p>Usage of the Internet is becoming more common due to rapid advance.</p>
+        </div>
+
+        <div class="card card8">
+            <h2>Ristretto</h2>
+            <span>$49</span>
+            <p>Usage of the Internet is becoming more common due to rapid advance.</p>
+        </div>
+
+        <div class="card card9">
+            <h2>Affogato</h2>
+            <span>$49</span>
+            <p>Usage of the Internet is becoming more common due to rapid advance.</p>
+        </div>
+
+    </div>
+
+</body>
+</html>

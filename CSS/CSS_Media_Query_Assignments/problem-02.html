@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rooms and suits</title>
+        <style>
+            #heading{
+                font-size: 30px;
+                color:rgb(219, 173, 76);
+                text-align: center;
+            }
+            #parah{
+                text-align: center;
+                color:black;
+                margin:10px;
+            }
+            .container{
+                display: flex;
+                height:350px;
+                width:100%;
+                background-color: white;
+             }
+             .hotel{
+                display: inline-block;
+                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                border:4px;
+                height:auto;
+                width:280px;
+                margin:10px;
+                padding: 10px;
+                grid-area: a;
+            
+             }
+             .hotel1{
+                 display: inline-block;
+                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                border:4px;
+                height:auto;
+                width:280px;
+                margin:10px;
+                padding: 10px;
+                grid-area: b;
+             }
+             .hotel2{
+                 display: inline-block;
+                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                border:4px;
+                height:auto;
+                width:280px;
+                margin:10px;
+                padding: 10px;
+                grid-area: c;
+             }
+             .photo{
+                height:200px;
+                width:100%;
+                align-content: center;
+             }
+             .about{
+                font-style: bold;
+                text-align: center;
+                color: black;
+             }
+             .money{
+                color: rgb(216, 165, 97);
+                text-align: center;
+                font-style: italic;
+
+             }
+             @media all and (max-width:1023px) and (min-width:768px){
+                .container{
+                    display: grid;
+                    grid-template-columns: repeat(2,1fr);
+                    grid-template-rows: repeat(2,1fr);
+                    grid-template-areas: 
+                    "a b"
+                    "c c";
+                }
+             }
+@media all and (max-width:767px){
+     .container{display: grid;
+                    grid-template-columns: 100%;
+                    grid-template-rows: repeat(3,1fr);
+                    grid-template-areas: 
+                    "a "
+                    "b"
+                    "c";
+     }
+}
+        </style>
+    </head>
+
+    <body>
+        <h1 id="heading">Rooms and Suits</h1>
+        <p id="parah">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live<br> the
+             blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, <br>a large 
+             language ocean.</p>
+        <div class="container">
+            <div class="hotel">
+                <img src="https://thumbs.dreamstime.com/b/deluxe-single-room-hotel-13959881.jpg" class="photo">
+                <h2 class="about">Single Room</h2>
+                <p class="money">90$ / PER NIGHT</p>
+
+            </div>
+            <div class="hotel1">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFQGKO_vp1eCcw_5lWoNUENa6PeBvNf-3BbnVbYHJvCw&s=10" class="photo">
+                <h2 class="about">Family Room</h2>
+                <p class="money">120$ / PER NIGHT</p>
+
+            </div>
+            <div class="hotel2">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSP5F1aYQ-xeDXwbAC3X-e3RLtQOBmvhx-rjd1BnRCofg&s=10" class="photo">
+                <h2 class="about">Presidential Room</h2>
+                <p class="money">250$ / PER NIGHT</p>
+
+            </div>
+
+            </div>
+
+    </body>
+</html>

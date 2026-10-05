@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            problem
+        </title>
+        <style>
+            #container{
+                display:grid;
+                grid-template-columns: repeat(3,1fr);
+                grid-template-rows: repeat(4,1fr);
+                grid-template-areas: 
+                "a a a "
+                "b b c"
+                "b b d"
+                "b b e";
+                gap: 10px;
+
+            }
+            .nav{
+                grid-area: a;
+                background-color: yellow;
+                height: 100px;
+                padding: 10px;
+            }
+            .left{
+                grid-area: b;
+                background-color: red;
+                padding: 10px;
+            }
+            .right1{
+                grid-area: c;
+                background-color: rgb(148, 188, 148);
+                padding: 10px;
+            }
+            .right2{
+                grid-area: d;
+                background-color: rgb(148, 188, 148);
+                padding: 10px;
+            }
+            .right3{
+                grid-area: e;
+                background-color: rgb(148, 188, 148);
+                padding: 10px;
+            }
+            @media all and (max-width:1023px) and (min-width:768px){
+                   #container{ 
+                    grid-template-columns: repeat(3,1fr);
+                    grid-template-rows: repeat(3,1fr);
+                    grid-template-areas: 
+                    "a a a"
+                    "b b b"
+                    "c d e";
+                   }
+            }
+            @media all and (max-width:767px){
+                 #container{ 
+                    grid-template-columns: 100%;
+                    grid-template-rows: repeat(5,1fr);
+                    grid-template-areas: 
+                    "a"
+                    "b"
+                    "c"
+                    "d"
+                    "e";
+                   }
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <div class="nav" >Navigation</div>
+            <div class="left">Left box</div>
+            <div class="right1">Right box 1</div>
+            <div class="right2">Right box 2</div>
+            <div class="right3">Right box 3</div>
+        </div>
+    </body>
+</html>

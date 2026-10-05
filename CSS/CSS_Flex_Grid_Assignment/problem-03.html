@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyLab</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #ffffff;
+            color: #333333;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+            margin-bottom: 40px;
+        }
+
+        .logo {
+            background-color: #9333ea;
+            color: #ffffff;
+            font-weight: bold;
+            font-size: 20px;
+            padding: 8px 16px;
+            border-radius: 4px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #4b5563;
+            margin-left: 20px;
+            font-size: 13px;
+            font-weight: 500;
+        }
+
+        nav a.active {
+            color: #2563eb;
+        }
+
+        .main-content {
+            display: flex;
+            gap: 40px;
+        }
+
+        .left-col {
+            flex: 1;
+        }
+
+        .sub-heading {
+            color: #2563eb;
+            font-size: 11px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+        }
+
+        .title {
+            font-size: 32px;
+            font-weight: 700;
+            color: #111827;
+            line-height: 1.2;
+            margin-bottom: 25px;
+        }
+
+        .desc {
+            font-size: 13px;
+            color: #6b7280;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .video-box {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .video-box img {
+            width: 100px;
+            height: 65px;
+            object-fit: cover;
+            border-radius: 6px;
+        }
+
+        .video-text {
+            font-size: 13px;
+            color: #374151;
+            font-weight: 500;
+            line-height: 1.4;
+        }
+
+        .right-col {
+            flex: 1;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .card {
+            background-color: #ffffff;
+            padding: 25px 20px;
+            border-radius: 8px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.04);
+        }
+
+        .icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 15px;
+            position: relative;
+        }
+
+        .icon-blue { background-color: #3b82f6; }
+        .icon-pink { background-color: #ec4899; }
+        .icon-orange { background-color: #f97316; }
+        .icon-teal { background-color: #14b8a6; }
+
+        .shape-screen {
+            width: 18px;
+            height: 12px;
+            border: 2px solid #ffffff;
+            border-radius: 2px;
+        }
+
+        .shape-user-head {
+            width: 8px;
+            height: 8px;
+            background-color: #ffffff;
+            border-radius: 50%;
+            margin: 0 auto 2px;
+        }
+
+        .shape-user-body {
+            width: 16px;
+            height: 8px;
+            background-color: #ffffff;
+            border-radius: 8px 8px 0 0;
+            margin: 0 auto;
+        }
+
+        .shape-globe {
+            width: 16px;
+            height: 16px;
+            border: 2px solid #ffffff;
+            border-radius: 50%;
+        }
+
+        .shape-cap {
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-bottom: 6px solid #ffffff;
+            width: 0;
+            height: 0;
+        }
+
+        .card h3 {
+            font-size: 14px;
+            color: #111827;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            font-size: 12px;
+            color: #6b7280;
+            line-height: 1.5;
+        }
+
+        @media (max-width: 768px) {
+            .main-content {
+                flex-direction: column;
+            }
+            .right-col {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <div class="logo">StudyLab</div>
+            <nav>
+                <a href="#" class="active">Home</a>
+                <a href="#">About</a>
+                <a href="#">Course</a>
+                <a href="#">Instructor</a>
+                <a href="#">Blog</a>
+                <a href="#">Contact</a>
+            </nav>
+        </header>
+
+        <div class="main-content">
+            <div class="left-col">
+                <div class="sub-heading">Welcome to StudyLab</div>
+                <h1 class="title">We Are StudyLab An Online Learning Center</h1>
+                <p class="desc">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                <p class="desc">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+                
+                <div class="video-box">
+                    <img src="https://picsum.photos/200/130" alt="Video thumbnail">
+                    <div class="video-text">
+                        Learn anything from StudyLab.<br>
+                        <strong>Watch video</strong>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right-col">
+                <div class="card">
+                    <div class="icon icon-blue">
+                        <div class="shape-screen"></div>
+                    </div>
+                    <h3>Top Quality Content</h3>
+                    <p>A small river named Duden flows by their place and supplies</p>
+                </div>
+
+                <div class="card">
+                    <div class="icon icon-pink">
+                        <div>
+                            <div class="shape-user-head"></div>
+                            <div class="shape-user-body"></div>
+                        </div>
+                    </div>
+                    <h3>Highly Skilled Instructor</h3>
+                    <p>A small river named Duden flows by their place and supplies</p>
+                </div>
+
+                <div class="card">
+                    <div class="icon icon-orange">
+                        <div class="shape-globe"></div>
+                    </div>
+                    <h3>World Class & Quiz</h3>
+                    <p>A small river named Duden flows by their place and supplies</p>
+                </div>
+
+                <div class="card">
+                    <div class="icon icon-teal">
+                        <div class="shape-cap"></div>
+                    </div>
+                    <h3>Get Certified</h3>
+                    <p>A small river named Duden flows by their place and supplies</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
